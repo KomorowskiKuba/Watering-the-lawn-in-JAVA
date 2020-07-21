@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="1100.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.Controller">
+    <children>
+        <HBox prefHeight="450.0" prefWidth="1125.0">
+            <children>
+                <ImageView fx:id="gif" fitHeight="400.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+                    <HBox.margin>
+                        <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+                    </HBox.margin>
+                </ImageView>
+                <VBox prefHeight="450.0" prefWidth="250.0">
+                    <children>
+                        <Label id="label1" fx:id="label1" alignment="CENTER" prefHeight="25.0" prefWidth="250.0" text="Nazwa pliku z danymi:" textAlignment="CENTER" wrapText="true">
+                            <padding>
+                                <Insets bottom="5.0" left="25.0" right="25.0" top="5.0" />
+                            </padding>
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="dataFile" prefHeight="25.0" prefWidth="250.0" />
+                        <Label id="label2" fx:id="label2" alignment="CENTER" prefHeight="25.0" prefWidth="250.0" text="Ilość cykli:" textAlignment="CENTER" wrapText="true">
+                            <padding>
+                                <Insets bottom="5.0" left="25.0" right="25.0" top="5.0" />
+                            </padding>
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="numberOfSeries" prefHeight="25.0" prefWidth="250.0" />
+                        <Label id="label3" fx:id="label3" alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="250.0" text="Długość klatki (w ms)" textAlignment="CENTER" wrapText="true">
+                            <padding>
+                                <Insets bottom="5.0" left="25.0" right="25.0" top="5.0" />
+                            </padding>
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="seriesLength" />
+                        <Label id="label4" fx:id="label4" alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="250.0" text="Nazwa pliku wyściowego (obraz)">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                            <padding>
+                                <Insets bottom="5.0" top="5.0" />
+                            </padding>
+                        </Label>
+                        <TextField fx:id="imageFile" />
+                        <Label id="label5" fx:id="label5" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="250.0" text="Nazwa pliku wyjściowego (współrzędne zraszaczy)" textAlignment="CENTER" wrapText="true">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                            <padding>
+                                <Insets bottom="5.0" left="25.0" right="25.0" top="5.0" />
+                            </padding>
+                        </Label>
+                        <TextField fx:id="coordinatesFile" />
+                        <HBox prefHeight="25.0" prefWidth="250.0">
+                            <children>
+                                <CheckBox fx:id="waterReflection" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="250.0" text="Odbijanie wody" textAlignment="CENTER" wrapText="true">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="50.0" right="50.0" />
+                                    </HBox.margin></CheckBox>
+                            </children>
+                            <padding>
+                                <Insets bottom="5.0" top="5.0" />
+                            </padding>
+                        </HBox>
+                        <Button fx:id="button" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="35.0" prefWidth="250.0" text="Generuj animacje" textAlignment="CENTER" wrapText="true">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets bottom="5.0" top="5.0" />
+                            </VBox.margin>
+                        </Button>
+                    </children>
+                    <HBox.margin>
+                        <Insets bottom="25.0" top="25.0" />
+                    </HBox.margin>
+                </VBox>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

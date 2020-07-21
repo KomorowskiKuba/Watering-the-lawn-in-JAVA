@@ -1,0 +1,18 @@
+.root{
+    -fx-font-size: 14px;
+    -fx-font-family: sans-serif;
+    -fx-background-color: #7fb6f5;
+}
+.check-box{
+    -fx-font-weight: bold;
+    -fx-text-fill: #e1f1f2;
+}
+
+.label{
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000;
+}
+.button{
+    -fx-font-weight: bold;
+}
