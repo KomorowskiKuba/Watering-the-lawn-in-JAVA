@@ -15,7 +15,7 @@ Project is created with:
 
 ## Screenshots
 ### Screenshot of generated sprinkler placement, showed in programs GUI
-<img src="./images-lawn/[E] Błędna długość klatki.png">
+<img src="./images-lawn/[T] Mocne podlanie.png">
 
 ### An example error message
-<img src="./images-lawn/[T] Mocne podlanie.png">
+<img src="./images-lawn/[E] Błędna długość klatki.png">
